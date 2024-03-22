@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
     <Hero />
-    <Features />
     <Video />
+    <Features />
     <Footer />
 
     </>
