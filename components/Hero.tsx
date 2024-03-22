@@ -20,24 +20,35 @@ export default function Hero() {
         justify={'center'}
         px={useBreakpointValue({ base: 4, md: 8 })}
         bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-        <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+        <Stack maxW={'2xl'} align={'center'} spacing={6} mt={155}>
           <Text
             color={'white'}
             fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
+            fontStyle='italic'
+            fontSize={useBreakpointValue({ base: '6xl', md: '4xl' })}>
             SunBurner
           </Text>
           <Stack direction={'row'}>
-          
-            <Button
+          <Text
+            color={'whiteAlpha.800'}
+            fontWeight={700}
+            lineHeight={1.2}
+            fontSize={useBreakpointValue({ base: '4xl', md: '4xl' })}>
+            New album out now
+          </Text>
+          </Stack>
+          <Stack direction={'row'}>
+          <Button
               bg={'whiteAlpha.400'}
               
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}>
-              Show me more
+              Buy Now
             </Button>
           </Stack>
+           
+         
         </Stack>
       </VStack>
     </Flex>

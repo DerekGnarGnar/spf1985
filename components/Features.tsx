@@ -16,41 +16,32 @@ interface FeatureProps {
 
 export default function Features() {
   return (
-    <Box p={4} >
+    <Box p={66} bgColor={'darkgrey'} >
        
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} >
-      <Card maxW='sm'>
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} justifyItems={'center'} >
+      <Card maxW='sm' shadow='none'>
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/vinyl.png'
       alt='Sunburner Album Vinyl'
       borderRadius='lg'
     />
-    <Stack mt='6' spacing='3'>
+    <Stack mt='3' spacing='3' color='white'>
       <Heading size='md'>Sunburner Vinyl</Heading>
       
-     
     </Stack>
   </CardBody>
   
-  <CardFooter>
-    <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
-        Buy now
-      </Button>
-     
-    </ButtonGroup>
-  </CardFooter>
 </Card>
 
-<Card maxW='sm'>
+<Card maxW='sm' shadow='none'>
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/cd2.jpg'
-      alt='Green double couch with wooden legs'
+      alt='picture of new cd'
       borderRadius='lg'
     />
-    <Stack mt='6' spacing='3'>
+    <Stack mt='3' spacing='3'>
       <Heading size='md'>Surf on the Beach CD</Heading>
      
      
@@ -58,15 +49,12 @@ export default function Features() {
   </CardBody>
  
   <CardFooter>
-    <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
-        Buy now
-      </Button>
     
-    </ButtonGroup>
+    
+    
   </CardFooter>
 </Card>
-<Card maxW='sm'>
+<Card maxW='sm' shadow='none'>
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/shirt.png'
@@ -80,12 +68,7 @@ export default function Features() {
   </CardBody>
   
   <CardFooter>
-    <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
-        Buy now
-      </Button>
-      
-    </ButtonGroup>
+   
   </CardFooter>
 </Card>
 
