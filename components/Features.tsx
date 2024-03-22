@@ -19,7 +19,7 @@ export default function Features() {
     <Box p={66} bgColor={'darkgrey'} >
        
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} justifyItems={'center'} >
-      <Card maxW='sm' shadow='none'>
+      <Card maxW='sm' shadow='none' bgColor={'darkgray'}>
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/vinyl.png'
