@@ -74,5 +74,7 @@ export default function Features() {
 
       </SimpleGrid>
     </Box>
+
+  
   )
 }
