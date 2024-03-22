@@ -34,7 +34,7 @@ export default function Features() {
   
 </Card>
 
-<Card maxW='sm' shadow='none'>
+<Card maxW='sm' shadow='none' bgColor={'darkgray'}>
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/cd2.jpg'
@@ -54,7 +54,7 @@ export default function Features() {
     
   </CardFooter>
 </Card>
-<Card maxW='sm' shadow='none'>
+<Card maxW='sm' shadow='none' bgColor={'darkgray'}>
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/shirt.png'
