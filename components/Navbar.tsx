@@ -3,10 +3,10 @@
 import {
   Box,
   Flex,
+  Avatar,
   HStack,
   Text,
   IconButton,
-  Image,
   Button,
   Menu,
   MenuButton,
@@ -17,34 +17,55 @@ import {
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
+import Link from "next/link";
 
-interface Props {
-  children: React.ReactNode
+//interface Props {
+  //children: React.ReactNode}
+
+const Links = [
+   {
+  name:"Home",
+  path:'/'
 }
+,
+{
+name:"Shows",
+path:'/shows/'
+}
+, 
+{
+  name:"Merch",
+  path:"/merch/"
+},
+{
+  name:"Contact",
+  path:"/contact"
+}
+];
 
-const Links = ['Shows', 'Merch', 'Contact']
+const NavLink = ({children, path}: {children: React.ReactNode, path: string}) => (
+  <Box   //as="a"
+  px={2}
+  py={1}
+  rounded={'md'}
+  _hover={{
+    textDecoration: 'none',
+    bg: useColorModeValue('gray.200', 'gray.700'),
+  }}
 
-const NavLink = (props: Props) => {
-  const { children } = props
-
-  return (
-    <Box
-      as="a"
-      px={2}
-      py={1}
-      rounded={'md'}
-      _hover={{
-        textDecoration: 'none',
-        bg: useColorModeValue('gray.200', 'gray.700'),
-      }}
-      href={'#'}>
+  >
+    <Link
+    
+      href={path}
+      >
       {children}
-    </Box>
-  )
-}
+    </Link>
+  </Box>
+  );
 
-export default function Simple() {
+
+export default function WithAction() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -59,22 +80,15 @@ export default function Simple() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>
-          <Image
-   height="50px"
-    
-    src='../images/Logo.png'
-    
-  />
-  
-            </Box>
+            <Box>Logo</Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+            {Links.map(({name,path}) => (
+                <NavLink key={path} path={path}>{name}</NavLink>
               ))}
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
+            
             <Menu>
               <MenuButton
                 as={Button}
@@ -82,7 +96,7 @@ export default function Simple() {
                 variant={'link'}
                 cursor={'pointer'}
                 minW={0}>
-              
+               
               </MenuButton>
               <MenuList>
                 <MenuItem>Link 1</MenuItem>
@@ -97,8 +111,8 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map(({name,path}) => (
+                <NavLink key={path} path={path}>{name}</NavLink>
               ))}
             </Stack>
           </Box>

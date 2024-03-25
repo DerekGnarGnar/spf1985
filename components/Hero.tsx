@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react'
+import { Stack, Flex, Button, Text, VStack, Link, useBreakpointValue } from '@chakra-ui/react'
 import Image from "next/image";
 
 
@@ -39,13 +39,15 @@ export default function Hero() {
           </Text>
           </Stack>
           <Stack direction={'row'}>
-          <Button
+          <Link href="https://spf1985.bandcamp.com/album/sunburner" isExternal>
+          <Button 
               bg={'whiteAlpha.400'}
-              
+             
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}>
               Buy Now
             </Button>
+          </Link>
           </Stack>
            
          
