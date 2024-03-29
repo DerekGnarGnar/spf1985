@@ -27,7 +27,7 @@ const Navbar = () => {
     return () =>window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
+  /*const links = [
     {
     
     
@@ -43,7 +43,24 @@ const Navbar = () => {
       id: 3,
       link: "contact",
     },
-  ];
+  ];*/
+
+  const Links = [
+
+    {
+    name:"Shows",
+    path:'/shows/'
+    }
+    , 
+    {
+      name:"Merch",
+      path:"https://spf1985.bandcamp.com/merch"
+    },
+    {
+      name:"Contact",
+      path:"/contact"
+    }
+    ];
 
   return (
     <div
@@ -51,7 +68,7 @@ const Navbar = () => {
         pageScroll ? "bg-white text-[#252525]" :  " bg-transparent text-white" }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
-        <Link href="/#home">
+        <Link href="/">
           <h1 className="text-3xl lg:text-4xl font-bold uppercase tracking-wider cursor-pointer">
             SPF 1985
           </h1>
@@ -59,10 +76,10 @@ const Navbar = () => {
 
         <div>
           <ul className="hidden md:flex">
-            {links.map(({ id, link }) => (
-              <Link key={id} href={`/#${link}`}>
+            {Links.map(({ name, path }) => (
+              <Link key={name} href={`${path}`}>
                 <li className="ml-10 text-sm uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider">
-                  {link}
+                  {name}
                 </li>
               </Link>
             ))}
@@ -114,13 +131,13 @@ const Navbar = () => {
 
           <div className="mt-24 flex flex-col h-fit gap-20">
             <ul className="uppercase">
-              {links.map(({ id, link }) => (
-                <Link key={id} href={`/#${link}`}>
+              {Links.map(({ name, path }) => (
+                <Link key={name} href={`/${path}`}>
                   <li
                     onClick={() => setNavigation(false)}
                     className="py-4 text-2xl tracking-wider cursor-pointer"
                   >
-                    {link}
+                    {name}
                   </li>
                 </Link>
               ))}
