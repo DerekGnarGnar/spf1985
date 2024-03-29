@@ -29,11 +29,9 @@ const Navbar = () => {
 
   const links = [
     {
+    
+    
       id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
       link: "portfolio",
     },
     {
@@ -53,7 +51,7 @@ const Navbar = () => {
   return (
     <div
       className={`w-full h-20 z-10 fixed duration-300 ease-in ${
-        pageScroll ? "bg-black text-[#fff]" :  " bg-white text-black" }`}
+        pageScroll ? "bg-black text-[#fff]" :  " bg-transparent text-white" }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
         <Link href="/#home">

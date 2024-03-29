@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { ChakraProvider } from '@chakra-ui/react'
 //import Navbar from "@/components/navbar/Navbar";
 import Navbar2 from "@/components/navbar2/Navbar2"
+import "./styles/globals.css";
+
 
 
 
