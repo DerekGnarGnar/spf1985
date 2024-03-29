@@ -8,6 +8,8 @@ import {
   FaGithub,
   FaTwitter,
   FaLinkedin,
+  FaInstagram,
+  FaSpotify,
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -117,7 +119,7 @@ const Navbar = () => {
                   onClick={() => setNavigation(false)}
                   className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer"
                 >
-                  Derek
+                  SPF 1985
                 </h2>
               </Link>
               <div
@@ -132,7 +134,7 @@ const Navbar = () => {
           <div className="mt-24 flex flex-col h-fit gap-20">
             <ul className="uppercase">
               {Links.map(({ name, path }) => (
-                <Link key={name} href={`/${path}`}>
+                <Link key={name} href={`${path}`}>
                   <li
                     onClick={() => setNavigation(false)}
                     className="py-4 text-2xl tracking-wider cursor-pointer"
@@ -146,14 +148,14 @@ const Navbar = () => {
             <div>
               <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                  <FaLinkedin size={25} />
+                  <FaInstagram size={25} />
                 </div>
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
                   <FaTwitter size={25} />
                 </div>
                 
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                  <FaGithub size={25} />
+                  <FaSpotify size={25} />
                 </div>
               </div>
             </div>
