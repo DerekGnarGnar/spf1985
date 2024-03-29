@@ -2,7 +2,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ChakraProvider } from '@chakra-ui/react'
-import Navbar from "@/components/navbar/Navbar";
+//import Navbar from "@/components/navbar/Navbar";
+import Navbar2 from "@/components/navbar2/Navbar2"
+
 
 
 /*const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +22,7 @@ export default function RootLayout({
  { return (
     <html lang="en">
       <ChakraProvider>
-      <Navbar />
+      <Navbar2 />
         {children}
       </ChakraProvider>
     </html>
