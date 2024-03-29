@@ -1,19 +1,14 @@
-"use client"
-import React from 'react';
-import {Box} from '@chakra-ui/react'
+import React from 'react'
+import ShowTable from '@/components/ShowTable'
+import ShowHero from '@/components/ShowHero'
 
-
-export default function Shows() {
-  
-  
+const page = () => {
   return (
-    <Box>
-    <section id="seated-55fdf2c0" data-artist-id="234972a7-49f9-4000-bd3b-cd1d7a4d6048" data-css-version="3">
-      </section>
-      </Box>
-  );
+    <div>
+      <ShowHero />
+      <ShowTable />
+    </div>
+  )
 }
 
-
-
-
+export default page

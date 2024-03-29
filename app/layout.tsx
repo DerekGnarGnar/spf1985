@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ChakraProvider } from '@chakra-ui/react'
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 
 
 /*const inter = Inter({ subsets: ["latin"] });
