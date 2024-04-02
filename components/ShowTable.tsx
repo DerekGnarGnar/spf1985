@@ -1,57 +1,59 @@
 import React from 'react'
 
 import {
+  Box,
+  Text,
     Table,
     Thead,
     Tbody,
-    Tfoot,
+   Container,
     Tr,
     Th,
     Td,
     TableCaption,
     TableContainer,
+    Center,
+    Heading
   } from '@chakra-ui/react'
 
 const ShowTable = () => {
   return (
     <div>
-        <TableContainer mt='20' ml='3em' mr='3em'>
-  <Table variant='striped' colorScheme='lightgray'>
-    <TableCaption>Imperial to metric conversion factors</TableCaption>
-    <Thead>
 
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>Saturday, April 13</Td>
-        <Td> @ The Garden- Napa, CA </Td>
-        <Td>Tickets</Td>
-      </Tr>
-      <Tr>
-        <Td>Saturday, April 20</Td>
-        <Td>@ Lagunitas Taproom - Petaluma, CA</Td>
-        <Td>Tickets</Td>
-      </Tr>
-      <Tr>
-        <Td>Saturday May 18</Td>
-        <Td>@ Henhouse Brewing - Santa Rosa, CA</Td>
-        <Td>Tickets</Td>
-      </Tr>
-      <Tr>
-        <Td>Saturday June 15</Td>
-        <Td>@ The Freshtival - Cotati, CA</Td>
-        <Td>Tickets</Td>
-      </Tr>
-      <Tr>
-        <Td>Saturday July 5</Td>
-        <Td>@ Hook & Ladder Winery - Santa Rosa, CA</Td>
-        <Td>Tickets</Td>
-      </Tr>
-    </Tbody>
-   
-  </Table>
-</TableContainer>
-      
+<Box pt="20px" pb='30px' bg='lightgray'>
+<Box>
+  <Center fontSize='2xl'>
+ <Heading mb="20px">
+  Catch us live!
+  </Heading>
+  </Center>
+</Box>
+<Box>
+  <Center fontSize='2xl'>
+  <Text fontWeight="bold">April 13, 2024 </Text> &nbsp;@ The Garden - Napa, California 
+  </Center>
+</Box>
+<Box>
+  <Center fontSize='2xl'>
+  <Text fontWeight="bold">April 20, 2024 </Text> &nbsp;@ Lagunitas Brewing - Petaluma, California 
+  </Center>
+</Box>
+<Box>
+  <Center fontSize='2xl'>
+  <Text fontWeight="bold">May 18, 2024 </Text> &nbsp;@ HenHouse Brewing - Santa Rosa, California 
+  </Center>
+</Box>
+<Box>
+  <Center fontSize='2xl'>
+  <Text fontWeight="bold">June 15, 2024</Text> &nbsp;@ The Freshtival - Cotati, California 
+  </Center>
+</Box>
+<Box>
+  <Center fontSize='2xl'>
+  <Text fontWeight="bold">July 5, 2024 </Text>&nbsp;@ Hook & Ladder Winery - Santa Rosa, California 
+  </Center>
+</Box>
+</Box>
     </div>
   )
 }
