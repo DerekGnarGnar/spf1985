@@ -42,10 +42,14 @@ export default function Hero() {
           <Link href="https://spf1985.bandcamp.com/album/sunburner" isExternal>
           <Button 
               bg={'whiteAlpha.400'}
-             
+              pt='10'
+              pb='10'
+              pl='50'
+              pr='50'
+             fontSize='3xl'
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}>
-              Buy Now
+              Buy & Stream Now
             </Button>
           </Link>
           </Stack>
