@@ -21,7 +21,7 @@ export default function Features() {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} justifyItems={'center'} >
       <Card maxW='sm' shadow='none' bgColor={'darkgray'}>
   <CardBody>
-    <Image maxW={{ base: '100%', sm: '200px' }}
+    <Image maxW={{ base: '300px', sm: '200px' }}
       src='../images/vinyl.png'
       alt='Sunburner Album Vinyl'
       borderRadius='lg'
@@ -36,23 +36,19 @@ export default function Features() {
 
 <Card maxW='sm' shadow='none' bgColor={'darkgray'}>
   <CardBody>
-    <Image maxW={{ base: '100%', sm: '200px' }}
+    <Image maxW={{ base: '300px', sm: '200px' }}
       src='../images/cd2.jpg'
       alt='picture of new cd'
       borderRadius='lg'
     />
     <Stack mt='3' spacing='3'>
-      <Heading size='md'>Surf on the Beach CD</Heading>
+      <Heading size='md' color='white'>Surf on the Beach CD</Heading>
      
      
     </Stack>
   </CardBody>
  
-  <CardFooter>
-    
-    
-    
-  </CardFooter>
+ 
 </Card>
 <Card maxW='sm' shadow='none' bgColor={'darkgray'}>
   <CardBody>
@@ -61,7 +57,7 @@ export default function Features() {
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>SPF 1985 Skull Tee Shirt</Heading>
+      <Heading size='md' color='white'>SPF 1985 Skull Tee Shirt</Heading>
       
      
     </Stack>

@@ -39,9 +39,9 @@ Center,
 export default function SplitScreen() {
   return (
     
-    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-      <Flex p={8} flex={1} mt="3em" justify={'center'}>
-        <Stack spacing={6} w={'full'} maxW={'lg'}>
+    <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} bg={'gray.500'} >
+      <Flex p={8} flex={1} mt={{base: 100, md:200}} justify={'center'}>
+        <Stack spacing={6} w={'full'} maxW={'lg'} >
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
             <Center>
             <Text
@@ -59,33 +59,54 @@ export default function SplitScreen() {
               }}>
               Booking:
             </Text>
+            
         </Center>
            
           </Heading>
          
-          <Center>
+         <Center>
              
-            <EmailIcon w={8} h={8} color="gray.600" />
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.600'}>
+            <EmailIcon w={8} h={8} color="white" />
+          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
           &nbsp;&nbsp; spf1985booking@gmail.com
           </Text>
           
-              </Center>
+          </Center>
+
+          <Box>
           <Center>
-            <Text>
-                Follow:
+          <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+           
+            <Text
+              as={'span'}
+              position={'relative'}
+              _after={{
+                content: "''",
+                width: 'full',
+                height: useBreakpointValue({ base: '20%', md: '30%' }),
+                position: 'absolute',
+                bottom: 1,
+                left: 0,
+                bg: 'blue.400',
+                zIndex: -1,
+              }}>
+             Follow:
             </Text>
-              <FaInstagram  />
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.600'}>
-          &nbsp;&nbsp; spf1985booking@gmail.com
+            </Heading>   
+        </Center>   
+        </Box>
+
+        <Center>
+          <FaInstagram  color="white" />
+        
+              <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
+              &nbsp;&nbsp;  www.instagram.com/spf_1985/
           </Text>
           </Center>
         </Stack>
 
 
       </Flex>
-
-
 
       <Flex flex={1}>
         <Image
