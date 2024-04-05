@@ -5,9 +5,7 @@ import React, { useEffect, useState } from "react";
 import {
   FaBars,
   FaTimes,
-  FaGithub,
   FaTwitter,
-  FaLinkedin,
   FaInstagram,
   FaSpotify,
 } from "react-icons/fa";
@@ -80,7 +78,7 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {Links.map(({ name, path }) => (
               <Link key={name} href={`${path}`}>
-                <li className="ml-10 text-sm uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider">
+                <li className="ml-10 text-3xl font-bold uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider">
                   {name}
                 </li>
               </Link>
