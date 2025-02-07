@@ -30,29 +30,25 @@ const ShowTable = () => {
 </Box>
 <Box>
   <Center fontSize='2xl'>
-  <Text fontWeight="bold">April 13, 2024 </Text> &nbsp;@ The Garden - Napa, California 
+  <Text fontWeight="bold">February 15, 2025 7pm </Text> &nbsp;@ Moonlight Brewing - Santa Rosa, California 
   </Center>
 </Box>
 <Box>
   <Center fontSize='2xl'>
-  <Text fontWeight="bold">April 20, 2024 </Text> &nbsp;@ Lagunitas Brewing - Petaluma, California 
+  <Text fontWeight="bold">February 16 2pm </Text> &nbsp;Hook & Ladder Winery - Occidental, California 
   </Center>
 </Box>
 <Box>
   <Center fontSize='2xl'>
-  <Text fontWeight="bold">May 18, 2024 </Text> &nbsp;@ HenHouse Brewing - Santa Rosa, California 
+  <Text fontWeight="bold">March 1 2pm-8pm </Text> &nbsp;@ HenHouse Brewing - Petaluma, California 
   </Center>
 </Box>
 <Box>
   <Center fontSize='2xl'>
-  <Text fontWeight="bold">June 15, 2024</Text> &nbsp;@ The Freshtival - Cotati, California 
+  <Text fontWeight="bold">March 15</Text> &nbsp;Unnamed Fest, Arlene Francis Center - Cotati, California 
   </Center>
 </Box>
-<Box>
-  <Center fontSize='2xl'>
-  <Text fontWeight="bold">July 5, 2024 </Text>&nbsp;@ Hook & Ladder Winery - Santa Rosa, California 
-  </Center>
-</Box>
+
 </Box>
     </div>
   )
