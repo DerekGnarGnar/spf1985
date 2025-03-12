@@ -69,7 +69,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
         <Link href="/">
-          <h1 className="text-3xl lg:text-4xl font-bold uppercase tracking-wider cursor-pointer">
+          <h1 className="text-3xl lg:text-base uppercase tracking-wider cursor-pointer">
             SPF 1985
           </h1>
         </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {Links.map(({ name, path }) => (
               <Link key={name} href={`${path}`}>
-                <li className="ml-10 text-3xl font-bold uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider">
+                <li className="ml-10 text-base uppercase cursor-pointer duration-200 ease-out hover:scale-105 tracking-wider">
                   {name}
                 </li>
               </Link>
