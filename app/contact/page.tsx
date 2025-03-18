@@ -1,9 +1,11 @@
 
 'use client'
 
-import { EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon,  } from '@chakra-ui/icons'
 import { FaInstagram } from "react-icons/fa6";
-import { MdSettings } from 'react-icons/md'
+import { MdSettings } from 'react-icons/md';
+import { FaFacebook } from 'react-icons/fa';
+
 
 
 
@@ -15,6 +17,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  Grid, GridItem
 } from '@chakra-ui/react'
 
 import {
@@ -23,7 +26,6 @@ Center,
     Box,
    
     IconButton,
-   
     VStack,
     HStack,
     Wrap,
@@ -94,15 +96,25 @@ export default function SplitScreen() {
             </Text>
             </Heading>   
         </Center>   
-        </Box>
-
-        <Center>
-          <FaInstagram  color="white" />
         
-              <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
-              &nbsp;&nbsp;  www.instagram.com/spf_1985/
+        
+        <Center>
+        <Grid>
+          <GridItem>
+          <FaInstagram  size={32} color="white" />
+              <Text fontSize={{ base: 'lg', lg: 'lg' }} color={'white'}>
+              &nbsp;&nbsp;www.instagram.com/spf_1985/
           </Text>
+          </GridItem>
+          <GridItem>
+          <FaFacebook size={32} color="white" />
+          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'}>
+          &nbsp;&nbsp; www.facebook.com/spf1985/
+          </Text>
+          </GridItem>
+          </Grid>
           </Center>
+          </Box>
         </Stack>
 
 
@@ -113,7 +125,7 @@ export default function SplitScreen() {
           alt={'derek and gabe'}
           objectFit={'cover'}
           src={
-            '../images/derekgabe.jpg'
+            '../images/Contactpagephoto.png'
           }
         />
       </Flex>
