@@ -115,7 +115,7 @@ const Navbar = () => {
               <Link href="/#home">
                 <h2
                   onClick={() => setNavigation(false)}
-                  className="text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer"
+                  className="text-3xl uppercase tracking-wider cursor-pointer"
                 >
                   SPF 1985
                 </h2>
