@@ -16,7 +16,7 @@ interface FeatureProps {
 
 export default function Features() {
   return (
-    <Box p={66} bgColor={'darkgrey'} >
+    <Box p={66} bgColor={'darkgrey'} borderWidth="2px" borderColor={'white'} >
        
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} justifyItems={'center'} >
       <Card maxW='sm' shadow='none' bgColor={'darkgray'}>
