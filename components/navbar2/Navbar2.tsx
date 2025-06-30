@@ -69,7 +69,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
         <Link href="/">
-          <h1 className="text-3xl lg:text-base uppercase tracking-wider cursor-pointer">
+          <h1 className="text-xl lg:text-base uppercase tracking-wider cursor-pointer">
             SPF 1985
           </h1>
         </Link>
