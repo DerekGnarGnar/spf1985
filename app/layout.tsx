@@ -7,8 +7,6 @@ import Navbar2 from "@/components/navbar2/Navbar2"
 import "./styles/globals.css";
 
 
-
-
 /*const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,10 +21,14 @@ export default function RootLayout({
  { children: React.ReactNode})
  { return (
     <html lang="en">
+      <body>
       <ChakraProvider>
       <Navbar2 />
+     
         {children}
+        
       </ChakraProvider>
+      </body>
     </html>
   );
 }
