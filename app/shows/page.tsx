@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import BandsintownWidget from '../../components/BandsinTown';
+import BandsintownWidget from '@/components/BandsinTown';
 import ShowHero from '@/components/ShowHero'
 
 const page = () => {
