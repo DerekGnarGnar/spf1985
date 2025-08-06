@@ -1,12 +1,12 @@
-import React from 'react'
-import ShowTable from '@/components/ShowTable'
+import React, { useEffect, useRef } from 'react';
+import BandsintownWidget from '../../components/BandsinTown';
 import ShowHero from '@/components/ShowHero'
 
 const page = () => {
   return (
     <div>
       <ShowHero />
-      <ShowTable />
+      <BandsintownWidget />
     </div>
   )
 }
