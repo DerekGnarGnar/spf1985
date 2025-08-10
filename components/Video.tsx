@@ -26,7 +26,7 @@ function YouTubeVideo() {
   ];
 
   return (
-    <Box bg="#1F1F1F" borderWidth="2px" borderColor="white" pb="2em">
+    <Box bg="#1F1F1F" pb="2em">
       {videos.map((video, index) => (
         <React.Fragment key={index}>
           <Center py="3em">

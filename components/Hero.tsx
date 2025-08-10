@@ -37,7 +37,7 @@ export default function Hero() {
             fontWeight={200}
             lineHeight={1}
             fontStyle='italic'
-            fontSize={useBreakpointValue({ base: '5xl', md: '2xl' })}>
+            fontSize={useBreakpointValue({ base: '3xl', md: '2xl' })}>
             SunBurner
           </Text>
           <Stack direction={'row'}>

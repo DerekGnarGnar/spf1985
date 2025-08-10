@@ -16,10 +16,10 @@ interface FeatureProps {
 
 export default function Features() {
   return (
-    <Box p={66} bgColor={'darkgrey'} >
+    <Box p={66} bgColor={'gray'} >
        
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} justifyItems={'center'} >
-      <Card maxW='sm' shadow='none' bgColor={'darkgray'}>
+      <Card maxW='sm' shadow='none' bgColor={'gray'} filter="auto" dropShadow="0px 0px 10px rgba(0, 0, 0, 0.5)">
   <CardBody>
     <Image maxW={{ base: '300px', sm: '200px' }}
       src='../images/vinyl.png'
@@ -34,9 +34,9 @@ export default function Features() {
   
 </Card>
 
-<Card maxW='sm' shadow='none' bgColor={'darkgray'}>
-  <CardBody>
-    <Image maxW={{ base: '300px', sm: '200px' }}
+<Card maxW='sm' shadow='none' bgColor={'gray'} filter="auto" dropShadow="0px 0px 10px rgba(0, 0, 0, 0.5)">
+  <CardBody >
+    <Image maxW={{ base: '300px', sm: '200px' } }
       src='../images/cd2.jpg'
       alt='picture of new cd'
       borderRadius='lg'
@@ -50,7 +50,7 @@ export default function Features() {
  
  
 </Card>
-<Card maxW='sm' shadow='none' bgColor={'darkgray'}>
+<Card maxW='sm' shadow='none' bgColor={'gray'} filter="auto" dropShadow="0px 0px 10px rgba(0, 0, 0, 0.5)">
   <CardBody>
     <Image maxW={{ base: '100%', sm: '200px' }}
       src='../images/shirt.png'
