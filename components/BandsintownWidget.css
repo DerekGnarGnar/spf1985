@@ -1,0 +1,37 @@
+.bit-html-export {
+    width: 100%;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 12px;
+  }
+  
+  .bit-table {
+    width: 100%;
+  }
+  
+  .bit-table td {
+    padding: 7px 10px;
+    vertical-align: middle;
+  }
+  
+  .bit-table a {
+    color: #00b4b3;
+    text-decoration: none;
+  }
+  
+  /* Alternate row background */
+  .bit-table tr:nth-of-type(2n) {
+    background: #eee;
+  }
+  
+  /* Optional: Uncomment for row borders */
+  /* .bit-table tr td {
+    border-bottom: 1px solid #ccc;
+  } */
+  
+  .bit-table .bit-cta {
+    text-align: center;
+    width: 25%;
+  }
+  
